@@ -2,10 +2,11 @@
 import FirstComponent from './components/FirstComponent';
 import TemplateExpression from './components/TemplateExpressions';
 import MyComponent from './components/MyComponent';
-
+import Events from './components/Events';
 //Styles - CSS//
 import './App.css';
 
+// Função Principal //
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <FirstComponent/>
       <TemplateExpression/>
       <MyComponent/>
+      <Events/>
     </div>
   );
 }
