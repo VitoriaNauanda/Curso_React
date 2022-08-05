@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Cidade from './assets/cidade.png';
 function App() {
   return (
     <div className="App">
@@ -9,6 +9,11 @@ function App() {
       <div> 
         <img src="\images.jpg" alt="borboleta" />
       </div>
+      {/*Imagem em asset*/}
+      <div>
+        <img src={Cidade} alt="Cidade" />
+      </div>
+
     </div>
 
   );
