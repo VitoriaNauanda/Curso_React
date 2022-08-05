@@ -8,9 +8,7 @@ const Challenge = () => {
             <p>O primeiro valor numérico é: {valorNumerico1}</p>
             <p>O segundo valor numérico é: {valorNumerico2}</p>
             <div>
-                <button
-                color = "pink" 
-                onClick= {() => {
+                <button onClick= {() => {
                     if (true){
                         console.log(valorNumerico1 + valorNumerico2)
                     }

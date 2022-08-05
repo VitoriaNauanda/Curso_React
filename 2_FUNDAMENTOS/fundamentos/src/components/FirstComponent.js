@@ -8,6 +8,6 @@ const FirstComponent = () => {
             <MyComponent/>
         </div>
 
-    );
+    )
 }
 export default FirstComponent
