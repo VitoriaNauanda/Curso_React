@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1 fontsize = '5'> Tarefa 3: Desafio sobre criação de apps em React</h1>
+      <h1 > Tarefa 3: Desafio sobre criação de apps em React</h1>
     </div>
   );
 }
