@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Cidade from './assets/cidade.png';
+//Componentes//
+import ManageData from './components/ManageData';
+import ListRender from './components/ListRender';
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +17,8 @@ function App() {
       <div>
         <img src={Cidade} alt="Cidade" />
       </div>
-
+      <ManageData />
+      <ListRender />
     </div>
 
   );
