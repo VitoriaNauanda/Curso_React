@@ -15,6 +15,7 @@ const ManageData = () => {
                 <p>Valor: {number}</p>
                 <button onClick ={() => {
                     setNumber(25)
+                    console.log("Funciona")
                 }}
                 >Mudar o state</button>
             </div>

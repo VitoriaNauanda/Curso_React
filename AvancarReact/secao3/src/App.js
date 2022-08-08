@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Cidade from './assets/cidade.png';
 //Componentes//
 import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
+import ConditionalRender from './components/ConditionalRender';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <ConditionalRender />
     </div>
 
   );
