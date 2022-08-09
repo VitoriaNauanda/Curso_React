@@ -6,8 +6,9 @@ import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionalRender';
 import ShowUserName from './components/ShowUserName';
-import { useState } from 'react';
+import {useState } from 'react';
 import CarDetails from './components/CarDetails';
+import Fragment from './components/Fragment';
 
 function App() {
   
@@ -42,6 +43,8 @@ function App() {
       {cars.map((car)=>(
         <CarDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
       ))}
+      {/*Fragment*/}
+      <Fragment propFragment="Teste"/>
     </div>
 
   );
