@@ -13,6 +13,7 @@ import Container from './components/Container';
 import ExecuteFuncao from './components/ExecuteFuncao';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 function App() {
   
@@ -29,6 +30,12 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg)
   }
+  const pessoaDado = [
+    {id: 0, nome: "Olívia", idade: 16, profissao: "Técnica em Informática"},
+    {id: 1, nome: "Maria", idade: 36, profissao: "Professora"},
+    {id: 2, nome: "Isadora", idade: 19, profissao: "Costureira"},
+  ]
+
   return (
     <div className="App">
       <h1 > Tarefa 3: Desafio sobre criação de apps em React</h1>
@@ -68,6 +75,9 @@ function App() {
       {/* state lift */}
       <Message msg={message} />
       <ChangeMessageState hMessage={handleMessage} />
+      {pessoaDado.map((dado)=>(
+        <UserDetails key={dado.id} nome={dado.nome} idade={dado.idade} profissao={dado.profissao} carteira={dado.idade >= 18 ?(<div> <p> Permitido tirar habilitação</p></div>):(<div><p>Não é permitido tirar habilitação</p></div>)}/>
+      ))}
     </div>
 
   );
