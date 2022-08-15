@@ -18,6 +18,7 @@ function App() {
       <h2 style={n < 10 ? ({color:"purple"}) : ({color:"pink"})}>CSS dinamico</h2>
       <h2 style={n > 10 ? ({color:"purple"}) : ({color:"pink"})}>CSS dinamico</h2>
       <h2 style={name === "Matheus" ? ({color:"green", backgroundColor: "#000"}) : null}>Teste nome</h2>
+      <h2 style={name === "Joao" ? ({color:"green", backgroundColor: "#000"}) : null}>Teste nome</h2>
     </div>
   );
 }
